@@ -1,0 +1,29 @@
+/**
+ * @file
+ * This header file contains macros used in @PACKAGE@.
+ * @author Javier Campón Pichardo
+ * @date 2014/07/25
+ * @copyright 2014 Javier Campón Pichardo
+ *
+ * Distributeed under the terms of the GNU General Public License version 3 or
+ * later.
+ *
+ * This software is distributed WITHOUT ANY WARRANTY; without even the implied
+ * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this software. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#define VERSION_MAJOR @PROJECT_VERSION_MAJOR@ ///< Package version major.
+#define VERSION_MINOR @PROJECT_VERSION_MINOR@ ///< Package version minor.
+#define VERSION_PATCH @PROJECT_VERSION_PATCH@ ///< Package version patch.
+#define VERSION_TWEAK @PROJECT_VERSION_TWEAK@ ///< Package version tweak.
+#define PROJECT_NAME "@PROJECT_NAME@" ///< Nombre del proyecto.
+#define APP_ID "@APP_ID@" ///< Application ID.
+#define APP_PATH "@APP_PATH@" ///< Application path.
+#define PACKAGE "@PACKAGE@" ///< Package name.
+#define LOCALE_DIR "@LOCALE_DIR@" ///< Locales directory.
+#define @BUILD_TYPE@ ///< The build type.
+#define PROFILES_FILENAME "profiles.xml"

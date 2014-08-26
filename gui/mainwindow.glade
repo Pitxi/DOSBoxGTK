@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.16.1 -->
+<interface>
+  <requires lib="gtk+" version="3.10"/>
+  <object class="GtkListStore" id="GamesListStore">
+    <columns>
+      <!-- column-name game_name -->
+      <column type="gchararray"/>
+      <!-- column-name profile_id -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkActionGroup" id="MainActionGroup">
+    <child>
+      <object class="GtkAction" id="New">
+        <property name="label" translatable="yes">New profile</property>
+        <property name="short_label" translatable="yes">New</property>
+        <property name="tooltip" translatable="yes">Add a new game profile.</property>
+        <property name="icon_name">new</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkAction" id="Edit">
+        <property name="label" translatable="yes">Edit profile</property>
+        <property name="short_label" translatable="yes">Edit</property>
+        <property name="tooltip" translatable="yes">Edit the selected game profile.</property>
+        <property name="sensitive">False</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkAction" id="Remove">
+        <property name="label" translatable="yes">Remove profile</property>
+        <property name="short_label" translatable="yes">Remove</property>
+        <property name="tooltip" translatable="yes">Remove the selected game profiles.</property>
+        <property name="sensitive">False</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkAction" id="Preferences">
+        <property name="label" translatable="yes">Edit preferences</property>
+        <property name="short_label" translatable="yes">Preferences</property>
+        <property name="tooltip" translatable="yes">Edit the application's preferences.</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkAction" id="Quit">
+        <property name="label" translatable="yes">Quit</property>
+        <property name="tooltip" translatable="yes">Quit DOSBoxGtk.</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkAction" id="About">
+        <property name="label" translatable="yes">About...</property>
+        <property name="short_label" translatable="yes">About...</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkAction" id="Run">
+        <property name="label" translatable="yes">Run game</property>
+        <property name="short_label" translatable="yes">Run</property>
+        <property name="tooltip" translatable="yes">Run the selected game with DOSBox.</property>
+        <property name="sensitive">False</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkAction" id="Setup">
+        <property name="label" translatable="yes">Run setup</property>
+        <property name="short_label" translatable="yes">Setup</property>
+        <property name="tooltip" translatable="yes">Run the selected game's setup program with DOSBox.</property>
+        <property name="sensitive">False</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkApplicationWindow" id="MainWindow">
+    <property name="width_request">640</property>
+    <property name="height_request">480</property>
+    <property name="can_focus">False</property>
+    <property name="window_position">center</property>
+    <property name="show_menubar">False</property>
+    <child>
+      <object class="GtkGrid" id="MainGrid">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkScrolledWindow" id="GamesScrolledWindow">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="shadow_type">in</property>
+            <child>
+              <object class="GtkTreeView" id="ProfilesTV">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="model">GamesListStore</property>
+                <property name="rules_hint">True</property>
+                <property name="search_column">0</property>
+                <child internal-child="selection">
+                  <object class="GtkTreeSelection" id="treeview-selection">
+                    <property name="mode">multiple</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn" id="ProfileColumn">
+                    <property name="title" translatable="yes">Game</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="ProfileCellRenderer"/>
+                      <attributes>
+                        <attribute name="text">0</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">1</property>
+            <property name="width">1</property>
+            <property name="height">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToolbar" id="MainToolbar">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="toolbar_style">icons</property>
+            <property name="icon_size">6</property>
+            <child>
+              <object class="GtkToolButton" id="NewTB">
+                <property name="use_action_appearance">True</property>
+                <property name="related_action">New</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="use_underline">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolButton" id="EditToolButton">
+                <property name="use_action_appearance">True</property>
+                <property name="related_action">Edit</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="use_underline">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolButton" id="RemoveToolButton">
+                <property name="use_action_appearance">True</property>
+                <property name="related_action">Remove</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="use_underline">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSeparatorToolItem" id="separator2">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolButton" id="RunToolButton">
+                <property name="use_action_appearance">True</property>
+                <property name="related_action">Run</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="use_underline">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolButton" id="SetupToolButton">
+                <property name="use_action_appearance">True</property>
+                <property name="related_action">Setup</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="use_underline">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSeparatorToolItem" id="Separator1">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolButton" id="PreferencesToolButton">
+                <property name="use_action_appearance">True</property>
+                <property name="related_action">Preferences</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="use_underline">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolButton" id="AboutToolButton">
+                <property name="use_action_appearance">True</property>
+                <property name="related_action">About</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="use_underline">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSeparatorToolItem" id="separator3">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolButton" id="QuitToolButton">
+                <property name="use_action_appearance">True</property>
+                <property name="related_action">Quit</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="use_underline">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <style>
+              <class name="primary-toolbar"/>
+            </style>
+          </object>
+          <packing>
+            <property name="left_attach">0</property>
+            <property name="top_attach">0</property>
+            <property name="width">1</property>
+            <property name="height">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

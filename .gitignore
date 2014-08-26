@@ -1,0 +1,14 @@
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
+config.h
+resources.c
+resources.h
+build
+*.bak
+*~
+*.pot
+*.mo

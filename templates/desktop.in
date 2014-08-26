@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=@PROJECT_NAME@
+Exec=@PACKAGE@
+Icon=@PACKAGE@
+Type=Application
+Categories=Games;
+Comment=@PROJECT_BRIEF@

@@ -1,0 +1,1673 @@
+# Spanish translations for DOSBoxGTK package.
+# Copyright (C) 2014 Javier Campón Pichardo
+# This file is distributed under the same license as the DOSBoxGTK package.
+# Javier Campón <javiercamponp@gmail.com>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DOSBoxGTK 0.0.1\n"
+"Report-Msgid-Bugs-To: javiercampon@gmail.com\n"
+"POT-Creation-Date: 2014-08-26 17:57-0400\n"
+"PO-Revision-Date: 2014-07-04 14:33-0400\n"
+"Last-Translator: Javier Campón <javiercamponp@gmail.com>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: gui/editmountdialog.glade:49 gui/editprofiledialog.glade:95
+#: gui/mixerdialog.glade:118 gui/preferencesdialog.glade:58
+#: gui/selectgameinfodialog.glade:43
+msgid "_Cancel"
+msgstr "_Cancelar"
+
+#: gui/editmountdialog.glade:64 gui/editprofiledialog.glade:110
+#: gui/mixerdialog.glade:133 gui/preferencesdialog.glade:73
+#: gui/selectgameinfodialog.glade:58
+msgid "_Accept"
+msgstr "_Aceptar"
+
+#: gui/editmountdialog.glade:97 gui/editprofiledialog.glade:4047
+msgid "Drive letter:"
+msgstr "Letra de la unidad:"
+
+#: gui/editmountdialog.glade:128 gui/editprofiledialog.glade:1850
+#: gui/editprofiledialog.glade:3101 gui/editprofiledialog.glade:3500
+msgid "Type:"
+msgstr "Tipo:"
+
+#: gui/editmountdialog.glade:143
+msgid "Directory"
+msgstr "Directorio"
+
+#: gui/editmountdialog.glade:145 gui/editmountdialog.glade:394
+msgid "Floppy disk"
+msgstr "Disquete"
+
+#: gui/editmountdialog.glade:174
+msgid "Volume label:"
+msgstr "Etiqueta de volumen:"
+
+#: gui/editmountdialog.glade:197
+msgid "SDL CD-ROM support:"
+msgstr "Soporte de CD-ROM de SDL:"
+
+#: gui/editmountdialog.glade:235
+msgid "Low level access:"
+msgstr "Acceso de bajo nivel:"
+
+#: gui/editmountdialog.glade:269
+msgid "Drive free size:"
+msgstr "Espacio libre de la unidad:"
+
+#: gui/editmountdialog.glade:323
+msgid "Mount directory"
+msgstr "Montar directorio"
+
+#: gui/editmountdialog.glade:377
+msgid "Image type:"
+msgstr "Tipo de imagen:"
+
+#: gui/editmountdialog.glade:434
+msgid "Image file path"
+msgstr "Ruta del fichero de imagen"
+
+#: gui/editmountdialog.glade:463 gui/editprofiledialog.glade:3722
+#: gui/editprofiledialog.glade:3960
+msgid "Add new mounting point."
+msgstr "Añadir nuevo punto de montaje."
+
+#: gui/editmountdialog.glade:464 gui/editprofiledialog.glade:3723
+#: gui/editprofiledialog.glade:3961
+msgid "Add"
+msgstr "Añadir"
+
+#: gui/editmountdialog.glade:478 gui/editprofiledialog.glade:3752
+#: gui/editprofiledialog.glade:3975
+msgid "Remove selected mounting point."
+msgstr "Eliminar el punto de montaje seleccionado."
+
+#: gui/editmountdialog.glade:479 gui/editprofiledialog.glade:3753
+#: gui/editprofiledialog.glade:3976 gui/mainwindow.glade:33
+msgid "Remove"
+msgstr "Eliminar"
+
+#: gui/editmountdialog.glade:510
+msgid "Mount image"
+msgstr "Montar imagen"
+
+#: gui/editprofiledialog.glade:148
+msgid "Title:"
+msgstr "Título:"
+
+#: gui/editprofiledialog.glade:162
+msgid "Developer:"
+msgstr "Desarrollador:"
+
+#: gui/editprofiledialog.glade:182 gui/editprofiledialog.glade:184
+msgid "You must provide a title in order to save the profile."
+msgstr "Debe especificar un título para poder guardar el perfil."
+
+#: gui/editprofiledialog.glade:183 gui/editprofiledialog.glade:185
+#: gui/editprofiledialog.glade:204 gui/editprofiledialog.glade:205
+#: gui/editprofiledialog.glade:276 gui/editprofiledialog.glade:277
+#: gui/editprofiledialog.glade:294 gui/editprofiledialog.glade:295
+#: gui/editprofiledialog.glade:312 gui/editprofiledialog.glade:313
+#: gui/editprofiledialog.glade:563 gui/editprofiledialog.glade:608
+#: gui/editprofiledialog.glade:1790 gui/editprofiledialog.glade:1791
+#: gui/editprofiledialog.glade:2377 gui/editprofiledialog.glade:2378
+#: gui/editprofiledialog.glade:3549 gui/editprofiledialog.glade:3550
+#: gui/editprofiledialog.glade:3566 gui/editprofiledialog.glade:3567
+#: gui/editprofiledialog.glade:3583 gui/editprofiledialog.glade:3584
+#: gui/editprofiledialog.glade:3600 gui/editprofiledialog.glade:3601
+#: gui/editprofiledialog.glade:3842 gui/editprofiledialog.glade:3843
+#: gui/editprofiledialog.glade:3858 gui/editprofiledialog.glade:3859
+msgid "Clear."
+msgstr "Limpiar."
+
+#: gui/editprofiledialog.glade:219
+msgid "Year:"
+msgstr "Año:"
+
+#: gui/editprofiledialog.glade:233
+msgid "Notes:"
+msgstr "Notas:"
+
+#: gui/editprofiledialog.glade:327
+msgid "Publisher:"
+msgstr "Editor:"
+
+#: gui/editprofiledialog.glade:341
+msgid "Genre:"
+msgstr "Género:"
+
+#: gui/editprofiledialog.glade:352
+msgid "Consult MobyGames website"
+msgstr "Consultar el Sitio WEB de MobyGames"
+
+#: gui/editprofiledialog.glade:371
+msgid "Info"
+msgstr "Información"
+
+#: gui/editprofiledialog.glade:390
+msgid "Priority levels for DOSBox."
+msgstr "Niveles de prioridad de DOSBox."
+
+#: gui/editprofiledialog.glade:392
+msgid "Priority:"
+msgstr "Prioridad:"
+
+#: gui/editprofiledialog.glade:405 gui/editprofiledialog.glade:433
+msgid "Priority level when DOSBox is active."
+msgstr "Nivel de prioridad cuando DOSBox está activo."
+
+#: gui/editprofiledialog.glade:406
+msgid "Active"
+msgstr "Activo"
+
+#: gui/editprofiledialog.glade:419 gui/editprofiledialog.glade:454
+msgid "Priority level when DOSBox is not focused or is minimized."
+msgstr "Nivel de prioridad cuando DOSBox no tiene el foco o está minimizado."
+
+#: gui/editprofiledialog.glade:420
+msgid "Inactive"
+msgstr "Inactivo"
+
+#: gui/editprofiledialog.glade:436 gui/editprofiledialog.glade:459
+msgid "Lowest"
+msgstr "El más bajo"
+
+#: gui/editprofiledialog.glade:437 gui/editprofiledialog.glade:460
+msgid "Lower"
+msgstr "Más bajo"
+
+#: gui/editprofiledialog.glade:438 gui/editprofiledialog.glade:461
+#: gui/editprofiledialog.glade:1147
+msgid "Normal"
+msgstr "Normal"
+
+#: gui/editprofiledialog.glade:439 gui/editprofiledialog.glade:462
+msgid "Higher"
+msgstr "Más alto"
+
+#: gui/editprofiledialog.glade:440 gui/editprofiledialog.glade:463
+msgid "Highest"
+msgstr "El más alto"
+
+#: gui/editprofiledialog.glade:458
+msgid "Pause"
+msgstr "Pausado"
+
+#: gui/editprofiledialog.glade:477
+msgid "Wait before closing the console if dosbox has an error."
+msgstr "Esperar antes de cerrar la consola si DOSBox tiene un error."
+
+#: gui/editprofiledialog.glade:491
+msgid "Wait before closing the console if DOSBox has an error."
+msgstr "Esperar antes de cerrar la consola si DOSBox tiene un error."
+
+#: gui/editprofiledialog.glade:493
+msgid "Wait on error:"
+msgstr "Esperar en caso de error:"
+
+#: gui/editprofiledialog.glade:507
+msgid "Exit afterwards:"
+msgstr "Salir al terminar:"
+
+#: gui/editprofiledialog.glade:533 gui/editprofiledialog.glade:548
+msgid "Select another language file."
+msgstr "Seleccionar otro fichero de idioma."
+
+#: gui/editprofiledialog.glade:535
+msgid "Language file:"
+msgstr "Fichero de idioma:"
+
+#: gui/editprofiledialog.glade:577 gui/editprofiledialog.glade:592
+msgid "Directory where things like wave, midi, screenshot get captured."
+msgstr ""
+"Directorio en el que serán capturaradas cosas como wave, midi o las "
+"instantáneas de pantalla."
+
+#: gui/editprofiledialog.glade:579
+msgid "Captures:"
+msgstr "Capturas:"
+
+#: gui/editprofiledialog.glade:630 gui/editprofiledialog.glade:1830
+msgid "General"
+msgstr "General"
+
+#: gui/editprofiledialog.glade:650 gui/editprofiledialog.glade:773
+msgid "What video system to use for output."
+msgstr "El sistema de video que usará la salida."
+
+#: gui/editprofiledialog.glade:652
+msgid "Output:"
+msgstr "Método de salida:"
+
+#: gui/editprofiledialog.glade:665 gui/editprofiledialog.glade:870
+msgid "How many frames DOSBox skips before drawing one."
+msgstr "Número de frames que DOSBox se saltará antes de dibujar uno."
+
+#: gui/editprofiledialog.glade:667
+msgid "Frame skip:"
+msgstr "Salto de frames:"
+
+#: gui/editprofiledialog.glade:680 gui/editprofiledialog.glade:793
+msgid ""
+"Scaler used to enlarge/enhance low resolution modes.\n"
+"If 'Forced' on, then the scaler will be used even if the result might not be "
+"desired."
+msgstr ""
+"Escalador usado para agrandar/mejorar los modos de baja resolución.\n"
+"Si está activada la opción'Forzado' el escalador se usará incluso si el "
+"resultado pudiera no ser el deseado."
+
+#: gui/editprofiledialog.glade:683
+msgid "Scaler:"
+msgstr "Escalador:"
+
+#: gui/editprofiledialog.glade:696 gui/editprofiledialog.glade:921
+msgid ""
+"What resolution to use for fullscreen.\n"
+"Using your monitor's native resolution with aspect correction enabled might "
+"give the best results.\n"
+"If you end up with small window on a large screen, try an output different "
+"from 'surface'."
+msgstr ""
+"La resolución a utilizar en el modo de pantalla completa.\n"
+"Usar la resolución nativa de su monitor con la corrección de aspecto "
+"activada debería proporcionar los mejores resultados.\n"
+"Si termina con una ventana pequeña en una pantalla grande pruebe con un "
+"método de salida diferente al de 'Superficie'."
+
+#: gui/editprofiledialog.glade:700
+msgid "Full screen resolution:"
+msgstr "Resolución en pantalla completa:"
+
+#: gui/editprofiledialog.glade:713 gui/editprofiledialog.glade:890
+msgid ""
+"Scale the window to this size IF the output device supports hardware "
+"scaling. ('Surface' output does not!)"
+msgstr ""
+"Escala la ventana hasta este tamaño SI el dispositivo de salida soporta "
+"escalado por hardware. (El método de salida 'Superficie' no lo soporta.)"
+
+#: gui/editprofiledialog.glade:715
+msgid "Windowed resolution:"
+msgstr "Resolución de la ventana:"
+
+#: gui/editprofiledialog.glade:728 gui/editprofiledialog.glade:828
+msgid "Start dosbox directly in fullscreen. (Press ALT-Enter to go back)"
+msgstr ""
+"Comenzar DOSBox directamente en pantallacmpleta. (Presione ALT-Enter para "
+"volver al modo de ventana)"
+
+#: gui/editprofiledialog.glade:730
+msgid "Full screen:"
+msgstr "Pantalla completa:"
+
+#: gui/editprofiledialog.glade:743 gui/editprofiledialog.glade:842
+msgid ""
+"Use double buffering in fullscreen. It can reduce screen flickering, but it "
+"can also result in a slow DOSBox."
+msgstr ""
+"Usar buffering doble de pantalla completa. Puede reducir el parpadeo de "
+"pantalla, pero también puede ralentizar DOSBox."
+
+#: gui/editprofiledialog.glade:745
+msgid "Double buffering:"
+msgstr "Buffering doble:"
+
+#: gui/editprofiledialog.glade:758 gui/editprofiledialog.glade:856
+msgid ""
+"Do aspect correction. If your output method doesn't support scaling this can "
+"slow things down!"
+msgstr ""
+"Realizar corrección de aspecto. ¡Si el método de salida no soporta esacalado "
+"las cosas podrían ralentizarse mucho!"
+
+#: gui/editprofiledialog.glade:760
+msgid "Aspect correction:"
+msgstr "Corrección de aspecto:"
+
+#: gui/editprofiledialog.glade:797 gui/editprofiledialog.glade:1748
+#: gui/editprofiledialog.glade:1767 gui/editprofiledialog.glade:1986
+#: gui/editprofiledialog.glade:2009 gui/editprofiledialog.glade:3177
+msgid "None"
+msgstr "Ninguno"
+
+#: gui/editprofiledialog.glade:894 gui/editprofiledialog.glade:906
+#: gui/editprofiledialog.glade:927 gui/editprofiledialog.glade:939
+msgid "Original"
+msgstr "Original"
+
+#: gui/editprofiledialog.glade:954 gui/editprofiledialog.glade:969
+msgid "Force the scaler."
+msgstr "Forzar escalado."
+
+#: gui/editprofiledialog.glade:956
+msgid "Forced:"
+msgstr "Forzado:"
+
+#: gui/editprofiledialog.glade:1030
+msgid "Display"
+msgstr "Pantalla"
+
+#: gui/editprofiledialog.glade:1070 gui/editprofiledialog.glade:1085
+msgid "The type of machine DOSBox tries to emulate."
+msgstr "El tipo de máquina que DOSBox intenta emular."
+
+#: gui/editprofiledialog.glade:1072
+msgid "Machine:"
+msgstr "Máquina:"
+
+#: gui/editprofiledialog.glade:1114
+msgid "Cycles:"
+msgstr "Ciclos:"
+
+#: gui/editprofiledialog.glade:1127 gui/editprofiledialog.glade:1142
+msgid ""
+"CPU Core used in emulation. Automatic will switch to Dynamic if available "
+"and appropriate."
+msgstr ""
+"Núcleo CPU usado en la emulación. Automático conmutará a Dinámico si está "
+"disponible y es apropiado."
+
+#: gui/editprofiledialog.glade:1129
+msgid "Core:"
+msgstr "Núcleo:"
+
+#: gui/editprofiledialog.glade:1145 gui/editprofiledialog.glade:1180
+#: gui/editprofiledialog.glade:1281 gui/editprofiledialog.glade:2010
+#: gui/editprofiledialog.glade:2595 gui/editprofiledialog.glade:2932
+#: gui/editprofiledialog.glade:3178
+msgid "Automatic"
+msgstr "Automático"
+
+#: gui/editprofiledialog.glade:1146
+msgid "Dynamic"
+msgstr "Dinámico"
+
+#: gui/editprofiledialog.glade:1148
+msgid "Simple"
+msgstr "Sencillo"
+
+#: gui/editprofiledialog.glade:1162 gui/editprofiledialog.glade:1177
+msgid "CPU Type used in emulation. Automatic is the fastest choice."
+msgstr "Tipo de CPU usada en la emulación. Automático es la opción más rápida."
+
+#: gui/editprofiledialog.glade:1164
+msgid "CPU type:"
+msgstr "Tipo de CPU:"
+
+#: gui/editprofiledialog.glade:1182
+msgid "386 slow"
+msgstr "386 lento"
+
+#: gui/editprofiledialog.glade:1183
+msgid "386 prefetch"
+msgstr "386 con precarga"
+
+#: gui/editprofiledialog.glade:1184
+msgid "486 slow"
+msgstr "486 lento"
+
+#: gui/editprofiledialog.glade:1185
+msgid "Pentium slow"
+msgstr "Pentium lento"
+
+#: gui/editprofiledialog.glade:1200
+msgid "Cycle up:"
+msgstr "Subida de ciclos:"
+
+#: gui/editprofiledialog.glade:1214
+msgid "Cycle down:"
+msgstr "Bajada de ciclos:"
+
+#: gui/editprofiledialog.glade:1262
+msgid "CPU speed."
+msgstr "Velocidad de la CPU."
+
+#: gui/editprofiledialog.glade:1282
+msgid "Maximum"
+msgstr "Máximo"
+
+#: gui/editprofiledialog.glade:1283
+msgid "Fixed"
+msgstr "Fijo"
+
+#: gui/editprofiledialog.glade:1310
+msgid "CPU"
+msgstr "CPU"
+
+#: gui/editprofiledialog.glade:1347 gui/editprofiledialog.glade:1364
+msgid ""
+"Amount of memory DOSBox has in megabytes.\n"
+"This value is best left at its default to avoid problems with some games, "
+"though few games might require a higher value.\n"
+"There is generally no speed advantage when raising this value."
+msgstr ""
+"Cantidad de memoria en megabytes que tiene DOSBox.\n"
+"Es mejor dejar este valor tal cual para evitar problemas con algunos juegos, "
+"aunque pocos juegos requerirán un valor superior.\n"
+"Por lo general la velocidad no mejora por incrementar este valor."
+
+#: gui/editprofiledialog.glade:1351
+msgid "Size:"
+msgstr "Tamaño:"
+
+#: gui/editprofiledialog.glade:1428 gui/editprofiledialog.glade:1473
+msgid "Enable XMS support."
+msgstr "Activar soporte XMS."
+
+#: gui/editprofiledialog.glade:1443 gui/editprofiledialog.glade:1487
+msgid "Enable EMS support."
+msgstr "Activar soporte EMS."
+
+#: gui/editprofiledialog.glade:1458 gui/editprofiledialog.glade:1501
+msgid "Enable UMB support."
+msgstr "Activar suporte UMB."
+
+#: gui/editprofiledialog.glade:1519
+msgid "Memory"
+msgstr "Memoria"
+
+#: gui/editprofiledialog.glade:1539
+msgid "Machine"
+msgstr "Máquina"
+
+#: gui/editprofiledialog.glade:1572 gui/editprofiledialog.glade:1692
+msgid "Enable silent mode, sound is still emulated though."
+msgstr "Activar modo silencioso, aunque el sonido seguirá siendo emulado."
+
+#: gui/editprofiledialog.glade:1574
+msgid "Silent mode:"
+msgstr "Modo silencioso:"
+
+#: gui/editprofiledialog.glade:1587 gui/editprofiledialog.glade:1804
+#: gui/editprofiledialog.glade:2152 gui/editprofiledialog.glade:2501
+#: gui/editprofiledialog.glade:2611
+msgid ""
+"Mixer sample rate, setting any device's rate higher than this will probably "
+"lower their sound quality."
+msgstr ""
+"Ratio de muestra del mezclador. Estabecer el ratio de los demás dispositivos "
+"por encima de este valor probablemente disminuirá la calidad del sonido de "
+"los mismos."
+
+#: gui/editprofiledialog.glade:1589 gui/editprofiledialog.glade:2218
+#: gui/editprofiledialog.glade:2474 gui/editprofiledialog.glade:2579
+msgid "Sample rate:"
+msgstr "Ratio de muestreo:"
+
+#: gui/editprofiledialog.glade:1602 gui/editprofiledialog.glade:1706
+msgid ""
+"Mixer block size, larger blocks might help sound stuttering but sound will "
+"also be more lagged."
+msgstr ""
+"Tamaño de bloque del mezclador. Un mayor tamaño ayudaría a evitar el "
+"tartamudeo pero el sonido se retrasará más."
+
+#: gui/editprofiledialog.glade:1604
+msgid "Block size:"
+msgstr "Tamaño de bloque:"
+
+#: gui/editprofiledialog.glade:1617 gui/editprofiledialog.glade:1728
+msgid "How many milliseconds of data to keep on top of the blocksize."
+msgstr "Número de milisegundos de datos que se mantendrán encima del bloque."
+
+#: gui/editprofiledialog.glade:1619
+msgid "Prebuffer:"
+msgstr "Prebuffer:"
+
+#: gui/editprofiledialog.glade:1632 gui/editprofiledialog.glade:1745
+msgid "Type of MPU-401 to emulate."
+msgstr "Tipo de MPU-401 a emular."
+
+#: gui/editprofiledialog.glade:1647 gui/editprofiledialog.glade:1764
+msgid "Device that will receive the MIDI data from MPU-401."
+msgstr "Dispositivo que recibirá los datos MIDI desde MPU-401."
+
+#: gui/editprofiledialog.glade:1649
+msgid "Midi device:"
+msgstr "Dispositivo MIDI:"
+
+#: gui/editprofiledialog.glade:1662 gui/editprofiledialog.glade:1787
+msgid ""
+"Special configuration options for the device driver. This is usually the ID "
+"of the device you want to use."
+msgstr ""
+"Opciones especiales de configuración para el driver de dispositivo. Se trata "
+"normalmente del ID del dispositivo que se desea usar."
+
+#: gui/editprofiledialog.glade:1664
+msgid "Config:"
+msgstr "Configuración:"
+
+#: gui/editprofiledialog.glade:1675
+msgid "Mixer"
+msgstr "Mezclador"
+
+#: gui/editprofiledialog.glade:1749
+msgid "Intelligent"
+msgstr "Inteligente"
+
+#: gui/editprofiledialog.glade:1768 gui/editprofiledialog.glade:2031
+msgid "Default"
+msgstr "Por defecto"
+
+#: gui/editprofiledialog.glade:1848 gui/editprofiledialog.glade:1983
+msgid "Type of Sound Blaster to emulate."
+msgstr "Tipo de Sound Blaster a emular."
+
+#: gui/editprofiledialog.glade:1863
+msgid ""
+"Sample rate of OPL music emulation. Use '49716' for highest quality (set the "
+"mixer rate accordingly)."
+msgstr ""
+"Ratio de muestreo de la emulación de la músic OPL. Use '49716' para máxima "
+"calidad (establezca el ratio de muestreo del mezclador en consecuencia)"
+
+#: gui/editprofiledialog.glade:1865
+msgid "OPL rate:"
+msgstr "Ratio OPL:"
+
+#: gui/editprofiledialog.glade:1878 gui/editprofiledialog.glade:2006
+msgid ""
+"Type of OPL emulation. On 'Automatic' the mode is determined by the Sound "
+"Blaster Type. All OPL modes are Adlib-compatible, except for 'CMS'."
+msgstr ""
+"Tipo de emulación OPL. En 'Automático' el modo se determina según el tipo de "
+"Sound Blaster. Todos los modos OPL son compatibles con Adlib, excepto 'CMS'"
+
+#: gui/editprofiledialog.glade:1880
+msgid "OPL mode:"
+msgstr "Modo OPL:"
+
+#: gui/editprofiledialog.glade:1893 gui/editprofiledialog.glade:2028
+msgid ""
+"Provider for the OPL emulation. 'Compatible' might provide better quality "
+"(see 'OPL Rate' as well)."
+msgstr ""
+"Poveedor para la emulación OPL. 'Compatible' debería ofrecer la mejor "
+"calidad (Ver también el 'Ratio OPL')"
+
+#: gui/editprofiledialog.glade:1895
+msgid "OPL emulation:"
+msgstr "Emulación OPL:"
+
+#: gui/editprofiledialog.glade:1908 gui/editprofiledialog.glade:2047
+msgid "The IO address of the Sound Blaster."
+msgstr "La dirección E/S de la Sound Blaster."
+
+#: gui/editprofiledialog.glade:1910 gui/editprofiledialog.glade:2233
+msgid "Address:"
+msgstr "Dirección:"
+
+#: gui/editprofiledialog.glade:1923 gui/editprofiledialog.glade:2071
+msgid "The IRQ number of the Sound Blaster."
+msgstr "El número de IRQ de la Sound Blaster."
+
+#: gui/editprofiledialog.glade:1938 gui/editprofiledialog.glade:2094
+msgid "The DMA number of the Sound Blaster."
+msgstr "El número de DMA de la SoundBlaster."
+
+#: gui/editprofiledialog.glade:1953 gui/editprofiledialog.glade:2130
+msgid "The High DMA number of the Sound Blaster."
+msgstr "El número de DMA Superior de la Sound Blaster."
+
+#: gui/editprofiledialog.glade:1968 gui/editprofiledialog.glade:2116
+msgid "Allow the Sound Blaster mixer to modify the DOSBox mixer."
+msgstr ""
+"Permitir al mezclador de la Sound Blaster modificar el mezclador de DOSBox."
+
+#: gui/editprofiledialog.glade:1970
+msgid "Mixer:"
+msgstr "Mezclador:"
+
+#: gui/editprofiledialog.glade:2032
+msgid "Compatible"
+msgstr "Compatible"
+
+#: gui/editprofiledialog.glade:2033
+msgid "Fast"
+msgstr "Rápido"
+
+#: gui/editprofiledialog.glade:2201 gui/editprofiledialog.glade:2291
+msgid "Enable the Gravis Ultrasound emulation."
+msgstr "Activar la emulación de la Gravis Ultrasound."
+
+#: gui/editprofiledialog.glade:2203 gui/editprofiledialog.glade:2459
+#: gui/editprofiledialog.glade:2564
+msgid "Enable:"
+msgstr "Activar:"
+
+#: gui/editprofiledialog.glade:2216 gui/editprofiledialog.glade:2391
+msgid "Sample rate of the Gravis Ultrasound emulation."
+msgstr "Ratio de muestreo de la emulación de la Gravis Ultrasound."
+
+#: gui/editprofiledialog.glade:2231 gui/editprofiledialog.glade:2305
+msgid "The IO base address of the Gravis Ultrasound."
+msgstr "La dirección base de E/S de la Gravis Ultrasound."
+
+#: gui/editprofiledialog.glade:2246 gui/editprofiledialog.glade:2329
+msgid "The IRQ number of the Gravis Ultrasound."
+msgstr "El número de IRQ de la Gravis Ultrasound"
+
+#: gui/editprofiledialog.glade:2261 gui/editprofiledialog.glade:2352
+msgid "The DMA channel of the Gravis Ultrasound."
+msgstr "El canal DMA de la Gravis Ultrasound."
+
+#: gui/editprofiledialog.glade:2276 gui/editprofiledialog.glade:2374
+msgid ""
+"Path to Ultrasound directory. In this directory there should be a MIDI "
+"directory that contains the patch files for GUS playback. Patch sets used "
+"with Timidity should work fine."
+msgstr ""
+"Ruta al directorio Ultrasound. En este directorio debería haber un "
+"directorio MIDI que contienelos archivos de parcheo para la reproducción de "
+"la GUS. Los conjuntos de parches usados con Timidity deberían funcionar bien."
+
+#: gui/editprofiledialog.glade:2457 gui/editprofiledialog.glade:2487
+msgid "Enable PC-Speaker emulation."
+msgstr "Activar la emulación del altavoz del PC."
+
+#: gui/editprofiledialog.glade:2472
+msgid "Sample rate of the PC-Speaker sound generation."
+msgstr "Ratio de muestreo de la generación de sonido del altavoz del PC."
+
+#: gui/editprofiledialog.glade:2529
+msgid "PC Speaker"
+msgstr "Altavoz del PC"
+
+#: gui/editprofiledialog.glade:2562 gui/editprofiledialog.glade:2592
+msgid ""
+"Enable Tandy Sound System emulation. For 'Automatic', emulation is present "
+"only if machine is set to 'Tandy'."
+msgstr ""
+"Permitir la emulación de Tandy Sound System. Si el valor es 'Automático' la "
+"emulación se producirá sólo si la máquina está configurada como 'Tandy'."
+
+#: gui/editprofiledialog.glade:2577
+msgid "Sample rate of the Tandy 3-Voice generation."
+msgstr "Ratio de muestreo de la generación de voz de Tandy 3-Voice."
+
+#: gui/editprofiledialog.glade:2596
+msgid "On"
+msgstr "Activo"
+
+#: gui/editprofiledialog.glade:2597
+msgid "Off"
+msgstr "Inactivo"
+
+#: gui/editprofiledialog.glade:2639
+msgid "Tandy"
+msgstr "Tandy"
+
+#: gui/editprofiledialog.glade:2654 gui/editprofiledialog.glade:2668
+msgid ""
+"Enable Disney Sound Source emulation. (Covox Voice Master and Speech Thing "
+"compatible)."
+msgstr ""
+"Activar la emulación de Disney Sound Source (Compatible con Covox Voice "
+"Master and Speech)"
+
+#: gui/editprofiledialog.glade:2687 gui/mixerdialog.glade:389
+msgid "Speaker"
+msgstr "Altavoz"
+
+#: gui/editprofiledialog.glade:2711
+msgid "Audio"
+msgstr "Audio"
+
+#: gui/editprofiledialog.glade:2750 gui/editprofiledialog.glade:2780
+msgid ""
+"Mouse will automatically lock, if you click on the screen. (Press CTRL-F10 "
+"to unlock)"
+msgstr ""
+"El ratón se bloqueará automáticamente si hace click en la pantalla. "
+"(Presione CTRL-F10 para desbloquearlo)"
+
+#: gui/editprofiledialog.glade:2752
+msgid "Automatic lock:"
+msgstr "Bloqueo automático:"
+
+#: gui/editprofiledialog.glade:2765 gui/editprofiledialog.glade:2794
+msgid "Mouse sensitivity."
+msgstr "Sensibilidad del ratón."
+
+#: gui/editprofiledialog.glade:2767
+msgid "Sensitivity:"
+msgstr "Sensibilidad:"
+
+#: gui/editprofiledialog.glade:2818
+msgid "Mouse"
+msgstr "Ratón"
+
+#: gui/editprofiledialog.glade:2855 gui/editprofiledialog.glade:2915
+msgid "Avoid usage of symkeys, might not work on all operating systems."
+msgstr ""
+"Evitar el uso de symkeys. Puede que no funcione en todos los sistemas "
+"operativos."
+
+#: gui/editprofiledialog.glade:2857
+msgid "Use scancodes:"
+msgstr "Usar scancodes:"
+
+#: gui/editprofiledialog.glade:2870 gui/editprofiledialog.glade:2929
+msgid "Keyboard layout."
+msgstr "Dispodición del teclado."
+
+#: gui/editprofiledialog.glade:2872
+msgid "Layout:"
+msgstr "Disposición:"
+
+#: gui/editprofiledialog.glade:2885 gui/editprofiledialog.glade:3042
+msgid ""
+"File used to load/save the key/event mappings from. Resetmapper only works "
+"with the defaul value."
+msgstr ""
+"Fichero usado para cargar/guardar el mapeado de clave/evento. Resetmapper "
+"sólo funciona con el valor por defecto."
+
+#: gui/editprofiledialog.glade:2887
+msgid "Mapper file:"
+msgstr "Fichero de mapeado:"
+
+#: gui/editprofiledialog.glade:2900 gui/editprofiledialog.glade:3027
+msgid "DOSBox KEYB command arguments."
+msgstr "Argumentos del comando KEYB de DOSBox."
+
+#: gui/editprofiledialog.glade:2902
+msgid "KEYB arguments:"
+msgstr "Argumentos de KEYB:"
+
+#: gui/editprofiledialog.glade:2933
+msgid "United States"
+msgstr "Estados Unidos"
+
+#: gui/editprofiledialog.glade:2934
+msgid "United States international"
+msgstr "Estados Unidos internacional"
+
+#: gui/editprofiledialog.glade:2935
+msgid "United States Dvorak"
+msgstr "Estados Unidos Dvorak"
+
+#: gui/editprofiledialog.glade:2936
+msgid "United States Dvorak left hand"
+msgstr "Estados Unidos Dvorak zurdos"
+
+#: gui/editprofiledialog.glade:2937
+msgid "United States Dvorak right hand"
+msgstr "Estados Unidos Dvorak diestros"
+
+#: gui/editprofiledialog.glade:2938
+msgid "Albania"
+msgstr "Albania"
+
+#: gui/editprofiledialog.glade:2939
+msgid "Albania (448)"
+msgstr "Albania (448)"
+
+#: gui/editprofiledialog.glade:2940
+msgid "Armenia"
+msgstr "Armenia"
+
+#: gui/editprofiledialog.glade:2941
+msgid "Azerbaijan"
+msgstr "Azerbayán"
+
+#: gui/editprofiledialog.glade:2942
+msgid "Belarus"
+msgstr "Bielorusia"
+
+#: gui/editprofiledialog.glade:2943
+msgid "Belgium"
+msgstr "Bélgica"
+
+#: gui/editprofiledialog.glade:2944
+msgid "Bosnia & Herzegovina"
+msgstr "Bosnia y Herzegovina"
+
+#: gui/editprofiledialog.glade:2945
+msgid "Brazil"
+msgstr "Brasil"
+
+#: gui/editprofiledialog.glade:2946
+msgid "Brazil (274)"
+msgstr "Brasil (274)"
+
+#: gui/editprofiledialog.glade:2947
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+#: gui/editprofiledialog.glade:2948
+msgid "Bulgaria (241)"
+msgstr "Bulgaria (241)"
+
+#: gui/editprofiledialog.glade:2949
+msgid "Canada"
+msgstr "Canadá"
+
+#: gui/editprofiledialog.glade:2950
+msgid "Canada (445)"
+msgstr "Canadá (445)"
+
+#: gui/editprofiledialog.glade:2951
+msgid "Canada (501)"
+msgstr "Canadá (501)"
+
+#: gui/editprofiledialog.glade:2952
+msgid "Croatia"
+msgstr "Croacia"
+
+#: gui/editprofiledialog.glade:2953
+msgid "Czech Republic"
+msgstr "República Checa"
+
+#: gui/editprofiledialog.glade:2954
+msgid "Czech Republic (243)"
+msgstr "República Checa (243)"
+
+#: gui/editprofiledialog.glade:2955
+msgid "Denmark"
+msgstr "Dinamarca"
+
+#: gui/editprofiledialog.glade:2956
+msgid "Estonia"
+msgstr "Estonia"
+
+#: gui/editprofiledialog.glade:2957
+msgid "Faroe Islands"
+msgstr "Islas Faroe"
+
+#: gui/editprofiledialog.glade:2958
+msgid "Finland"
+msgstr "Finlandia"
+
+#: gui/editprofiledialog.glade:2959
+msgid "France"
+msgstr "Francia"
+
+#: gui/editprofiledialog.glade:2960
+msgid "France (120)"
+msgstr "Francia (120)"
+
+#: gui/editprofiledialog.glade:2961
+msgid "Georgia"
+msgstr "Gerogia"
+
+#: gui/editprofiledialog.glade:2962
+msgid "Germany"
+msgstr "Alemania"
+
+#: gui/editprofiledialog.glade:2963
+msgid "Germany (453)"
+msgstr "Alemania (453)"
+
+#: gui/editprofiledialog.glade:2964
+msgid "Greece"
+msgstr "Grecia"
+
+#: gui/editprofiledialog.glade:2965
+msgid "Greece (220)"
+msgstr "Grecia (220)"
+
+#: gui/editprofiledialog.glade:2966
+msgid "Greece (459)"
+msgstr "Grecia (459)"
+
+#: gui/editprofiledialog.glade:2967
+msgid "Hungary"
+msgstr "Hungría"
+
+#: gui/editprofiledialog.glade:2968
+msgid "Hungary (208)"
+msgstr "Hungría (208)"
+
+#: gui/editprofiledialog.glade:2969
+msgid "Iceland"
+msgstr "Islandia"
+
+#: gui/editprofiledialog.glade:2970
+msgid "Iceland (161)"
+msgstr "Islandia (161)"
+
+#: gui/editprofiledialog.glade:2971
+msgid "Italy"
+msgstr "Italia"
+
+#: gui/editprofiledialog.glade:2972
+msgid "Italy (142)"
+msgstr "Italia (142)"
+
+#: gui/editprofiledialog.glade:2973
+msgid "Kazakhstan"
+msgstr "Kazajistán"
+
+#: gui/editprofiledialog.glade:2974
+msgid "Kyrgyzstan"
+msgstr "Kirguizistán"
+
+#: gui/editprofiledialog.glade:2975
+msgid "Latin-american spanish"
+msgstr "Español Latinoamericano"
+
+#: gui/editprofiledialog.glade:2976
+msgid "Latvia"
+msgstr "Letonia"
+
+#: gui/editprofiledialog.glade:2977
+msgid "Latvia (455)"
+msgstr "Letonia (455)"
+
+#: gui/editprofiledialog.glade:2978
+msgid "Lithuania"
+msgstr "Lituania"
+
+#: gui/editprofiledialog.glade:2979
+msgid "Lithuania (210)"
+msgstr "Lituania (210)"
+
+#: gui/editprofiledialog.glade:2980
+msgid "Lithuania (211)"
+msgstr "Lituania (211)"
+
+#: gui/editprofiledialog.glade:2981
+msgid "Lithuania (221)"
+msgstr "Lituania (221)"
+
+#: gui/editprofiledialog.glade:2982
+msgid "Lithuania (456)"
+msgstr "Lituania (456)"
+
+#: gui/editprofiledialog.glade:2983
+msgid "Macedonia"
+msgstr "Macedonia"
+
+#: gui/editprofiledialog.glade:2984
+msgid "Malta"
+msgstr "Malta"
+
+#: gui/editprofiledialog.glade:2985
+msgid "Malta (47)"
+msgstr "Malta (47)"
+
+#: gui/editprofiledialog.glade:2986
+msgid "Mongolia"
+msgstr "Mongolia"
+
+#: gui/editprofiledialog.glade:2987
+msgid "Netherlands"
+msgstr "Holanda"
+
+#: gui/editprofiledialog.glade:2988
+msgid "Norway"
+msgstr "Noruega"
+
+#: gui/editprofiledialog.glade:2989
+msgid "Philippines"
+msgstr "Filipinas"
+
+#: gui/editprofiledialog.glade:2990
+msgid "Poland"
+msgstr "Polonia"
+
+#: gui/editprofiledialog.glade:2991
+msgid "Poland (214)"
+msgstr "Polonia (214)"
+
+#: gui/editprofiledialog.glade:2992
+msgid "Portugal"
+msgstr "Portugal"
+
+#: gui/editprofiledialog.glade:2993
+msgid "Romania"
+msgstr "Rumanía"
+
+#: gui/editprofiledialog.glade:2994
+msgid "Romania (446)"
+msgstr "Rumanía (446)"
+
+#: gui/editprofiledialog.glade:2995
+msgid "Russia"
+msgstr "Rusia"
+
+#: gui/editprofiledialog.glade:2996
+msgid "Russia (443)"
+msgstr "Rusia (443)"
+
+#: gui/editprofiledialog.glade:2997
+msgid "Serbia & Montenegro"
+msgstr "Serbia y Montenegro"
+
+#: gui/editprofiledialog.glade:2998
+msgid "Serbia & Montenegro (450)"
+msgstr "Serbia y Montenegro (450)"
+
+#: gui/editprofiledialog.glade:2999
+msgid "Slovakia"
+msgstr "Eslovaquia"
+
+#: gui/editprofiledialog.glade:3000
+msgid "Slovenia"
+msgstr "Eslovenia"
+
+#: gui/editprofiledialog.glade:3001
+msgid "Spain"
+msgstr "España"
+
+#: gui/editprofiledialog.glade:3002
+msgid "Sweden"
+msgstr "Suecia"
+
+#: gui/editprofiledialog.glade:3003
+msgid "Swiss (sd)"
+msgstr "Suiza (sd)"
+
+#: gui/editprofiledialog.glade:3004
+msgid "Swiss (sf)"
+msgstr "Suiza (sf)"
+
+#: gui/editprofiledialog.glade:3005
+msgid "Turkmenistan"
+msgstr "Turkmenistán"
+
+#: gui/editprofiledialog.glade:3006
+msgid "Turkey"
+msgstr "Turquía"
+
+#: gui/editprofiledialog.glade:3007
+msgid "Turkey (440)"
+msgstr "Turquía (440)"
+
+#: gui/editprofiledialog.glade:3008
+msgid "Ukraine"
+msgstr "Ucrania"
+
+#: gui/editprofiledialog.glade:3009
+msgid "Ukraine (465)"
+msgstr "Ucrania (465)"
+
+#: gui/editprofiledialog.glade:3010
+msgid "United Kingdom"
+msgstr "Reino Unido"
+
+#: gui/editprofiledialog.glade:3011
+msgid "United Kingdom (168)"
+msgstr "Reino Unido (168)"
+
+#: gui/editprofiledialog.glade:3012
+msgid "Uzbekistan"
+msgstr "Uzbekistán"
+
+#: gui/editprofiledialog.glade:3013
+msgid "Yugoslavia"
+msgstr "Yugoslavia"
+
+#: gui/editprofiledialog.glade:3063
+msgid "Keyboard"
+msgstr "Teclado"
+
+#: gui/editprofiledialog.glade:3099 gui/editprofiledialog.glade:3174
+msgid "Type of joystick to emulate."
+msgstr "Tipo de joystick a emular."
+
+#: gui/editprofiledialog.glade:3114 gui/editprofiledialog.glade:3197
+msgid ""
+"Enable timed intervals for axis. Experiment with this option, if your "
+"joystick drifts (away)."
+msgstr ""
+"Habilitar intervalos temporizados para los ejes. Experimente con estas "
+"opciones si su joystick se distancia."
+
+#: gui/editprofiledialog.glade:3116
+msgid "Timed emulation:"
+msgstr "Emulación temporizada:"
+
+#: gui/editprofiledialog.glade:3129 gui/editprofiledialog.glade:3211
+msgid "Continuously fires as long as you keep the button pressed."
+msgstr "Disparo contínuo mientras mantiene pulsado el botón."
+
+#: gui/editprofiledialog.glade:3131
+msgid "Automatic fire:"
+msgstr "Disparo automático:"
+
+#: gui/editprofiledialog.glade:3144 gui/editprofiledialog.glade:3225
+msgid "Swap the 3rd and the 4th axis. Can be useful for certain joysticks."
+msgstr ""
+"Intercambiar los ejes 3º y 4º. Puede resultar útil para ciertos joysticks."
+
+#: gui/editprofiledialog.glade:3146
+msgid "Swap axes 3 & 4:"
+msgstr "Intercambiar ejes 3 y 4:"
+
+#: gui/editprofiledialog.glade:3159 gui/editprofiledialog.glade:3239
+msgid "Enable button wrapping at the number of emulated buttons."
+msgstr "Habilitar envoltura de botón para el número de botones emulados."
+
+#: gui/editprofiledialog.glade:3161
+msgid "Button wrapping:"
+msgstr "Envoltura de botón:"
+
+#: gui/editprofiledialog.glade:3179
+msgid "2 Axis"
+msgstr "2 Ejes"
+
+#: gui/editprofiledialog.glade:3180
+msgid "4 Axis (only first controller)"
+msgstr "4 Ejes (sólo primer controlador)"
+
+#: gui/editprofiledialog.glade:3181
+msgid "4 Axis (only second controller)"
+msgstr "4 Ejes (sólo segundo controlador)"
+
+#: gui/editprofiledialog.glade:3182
+msgid "Flight Control System"
+msgstr "Sistema de Control de Vuelo"
+
+#: gui/editprofiledialog.glade:3183
+msgid "CH Flightstick"
+msgstr "Palanca de vuelo CH"
+
+#: gui/editprofiledialog.glade:3257
+msgid "Joystick"
+msgstr "Joystick"
+
+#: gui/editprofiledialog.glade:3277
+msgid "Input"
+msgstr "Entrada"
+
+#: gui/editprofiledialog.glade:3298 gui/editprofiledialog.glade:3314
+msgid "Enable IPX over UDP/IP emulation."
+msgstr "Habilitar la emulación de IPX sobre UDP/IP."
+
+#: gui/editprofiledialog.glade:3300
+msgid "Enable IPX:"
+msgstr "Habilitar IPX:"
+
+#: gui/editprofiledialog.glade:3348
+msgid "Serial COM 1 port configuration."
+msgstr "Configuración del pueto serie COM 1."
+
+#: gui/editprofiledialog.glade:3350
+msgid "Serial 1:"
+msgstr "Serie 1:"
+
+#: gui/editprofiledialog.glade:3365
+msgid "Serial COM 2 port configuration."
+msgstr "Configuración del pueto serie COM 2."
+
+#: gui/editprofiledialog.glade:3367
+msgid "Serial 2:"
+msgstr "Serie 2:"
+
+#: gui/editprofiledialog.glade:3382
+msgid "Serial COM 3 port configuration."
+msgstr "Configuración del pueto serie COM 3."
+
+#: gui/editprofiledialog.glade:3384
+msgid "Serial 3:"
+msgstr "Serie 3:"
+
+#: gui/editprofiledialog.glade:3399
+msgid "Serial COM 4 port configuration."
+msgstr "Configuración del pueto serie COM 4."
+
+#: gui/editprofiledialog.glade:3401
+msgid "Serial 4:"
+msgstr "Serie 4:"
+
+#: gui/editprofiledialog.glade:3415
+msgid "Set type of device connected to COM 1 port."
+msgstr "Establecer el tipo de dispositivo conectado al puerto COM 1."
+
+#: gui/editprofiledialog.glade:3418 gui/editprofiledialog.glade:3439
+#: gui/editprofiledialog.glade:3460 gui/editprofiledialog.glade:3481
+msgid "Disabled"
+msgstr "Deshabilitado"
+
+#: gui/editprofiledialog.glade:3419 gui/editprofiledialog.glade:3440
+#: gui/editprofiledialog.glade:3461 gui/editprofiledialog.glade:3482
+msgid "Dummy"
+msgstr "Simulado"
+
+#: gui/editprofiledialog.glade:3420 gui/editprofiledialog.glade:3441
+#: gui/editprofiledialog.glade:3462 gui/editprofiledialog.glade:3483
+#: gui/editprofiledialog.glade:3621
+msgid "Modem"
+msgstr "Módem"
+
+#: gui/editprofiledialog.glade:3421 gui/editprofiledialog.glade:3442
+#: gui/editprofiledialog.glade:3463 gui/editprofiledialog.glade:3484
+msgid "Null Modem"
+msgstr "Módem Nulo"
+
+#: gui/editprofiledialog.glade:3422 gui/editprofiledialog.glade:3443
+#: gui/editprofiledialog.glade:3464 gui/editprofiledialog.glade:3485
+msgid "Direct serial"
+msgstr "Serie directo"
+
+#: gui/editprofiledialog.glade:3436
+msgid "Set type of device connected to COM 2 port."
+msgstr "Establecer el tipo de dispositivo conectado al puerto COM 2."
+
+#: gui/editprofiledialog.glade:3457
+msgid "Set type of device connected to COM 3 port."
+msgstr "Establecer el tipo de dispositivo conectado al puerto COM 3."
+
+#: gui/editprofiledialog.glade:3478
+msgid "Set type of device connected to COM 4 port."
+msgstr "Establecer el tipo de dispositivo conectado al puerto COM 4."
+
+#: gui/editprofiledialog.glade:3499
+msgid "Type of device connected to COM ports."
+msgstr "Tipo de dispositivo conectado al puerto COM."
+
+#: gui/editprofiledialog.glade:3513
+msgid ""
+"COM ports configuration parameters.\n"
+"Additional parameters must be in the form of 'parameter:value'\n"
+"\n"
+"* All types:\n"
+"\t* irq (optional)\n"
+"* Direct serial:\n"
+"\t* realport (required)\n"
+"\t* rxdelay (optional)\n"
+"* Modem:\n"
+"\t* listenport (optional)\n"
+"* Null Modem:\n"
+"\t* server (optional)\n"
+"\t* rxdelay (optional)\n"
+"\t* txdelay (optional)\n"
+"\t* telnet (optional)\n"
+"\t* usedtr (optional)\n"
+"\t* transparent (optional)\n"
+"\t* port (optional)\n"
+"\t* inhsocket (optional)"
+msgstr ""
+"Parámetros de configuración de los puertos COM.\n"
+"Los parámetros adicionales deben estar en la forma 'parámetro:valor'\n"
+"\n"
+"* Todos los tipos:\n"
+"\t* irq (opcional)\n"
+"* Serie directo:\n"
+"\t* realport (requerido)\n"
+"\t* rxdelay (opcional)\n"
+"* Módem:\n"
+"\t* listenport (opional)\n"
+"* Módem Nulo:\n"
+"\t* server (opcional)\n"
+"\t* rxdelay (opcional)\n"
+"\t* txdelay (opcional)\n"
+"\t* telnet (opcional)\n"
+"\t* usedtr (opcional)\n"
+"\t* transparent (opcional)\n"
+"\t* port (opcional)\n"
+"\t* inhsocket (opcional)"
+
+#: gui/editprofiledialog.glade:3532
+msgid "Parameters:"
+msgstr "Parámetros:"
+
+#: gui/editprofiledialog.glade:3641
+msgid "Network"
+msgstr "Red"
+
+#: gui/editprofiledialog.glade:3692
+msgid "Mount Command"
+msgstr "Comando Mount"
+
+#: gui/editprofiledialog.glade:3737
+msgid "Edit selected mounting point."
+msgstr "Editar el punto de montaje seleccinado."
+
+#: gui/editprofiledialog.glade:3738 gui/mainwindow.glade:25
+msgid "Edit"
+msgstr "Editar"
+
+#: gui/editprofiledialog.glade:3778
+msgid "Mounting overview"
+msgstr "Resumen de montaje"
+
+#: gui/editprofiledialog.glade:3811
+msgid "Main:"
+msgstr "Principal:"
+
+#: gui/editprofiledialog.glade:3825
+msgid "Setup:"
+msgstr "Configuración:"
+
+#: gui/editprofiledialog.glade:3910
+msgid "DOS Program"
+msgstr "Programa de DOS"
+
+#: gui/editprofiledialog.glade:4015
+msgid "Boot Command"
+msgstr "Comando Boot"
+
+#: gui/editprofiledialog.glade:4076
+msgid "Booter"
+msgstr "Cargador"
+
+#: gui/editprofiledialog.glade:4102
+msgid "Mounting"
+msgstr "Montaje"
+
+#: gui/mainwindow.glade:16
+msgid "New profile"
+msgstr "Nuevo perfil"
+
+#: gui/mainwindow.glade:17
+msgid "New"
+msgstr "Nuevo"
+
+#: gui/mainwindow.glade:18
+msgid "Add a new game profile."
+msgstr "Añadir un nuevo perfil de juego."
+
+#: gui/mainwindow.glade:24
+msgid "Edit profile"
+msgstr "Editar perfil"
+
+#: gui/mainwindow.glade:26
+msgid "Edit the selected game profile."
+msgstr "Editar el perfil de juego seleccionado."
+
+#: gui/mainwindow.glade:32
+msgid "Remove profile"
+msgstr "Eliminar perfil"
+
+#: gui/mainwindow.glade:34
+msgid "Remove the selected game profiles."
+msgstr "Eliminar el perfil de juego seleccionado."
+
+#: gui/mainwindow.glade:40
+msgid "Edit preferences"
+msgstr "Editar preferencias"
+
+#: gui/mainwindow.glade:41
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: gui/mainwindow.glade:42
+msgid "Edit the application's preferences."
+msgstr "Editar las preferencias de la aplicación."
+
+#: gui/mainwindow.glade:47
+msgid "Quit"
+msgstr "Salir"
+
+#: gui/mainwindow.glade:48
+msgid "Quit DOSBoxGtk."
+msgstr "Salir de DOSBoxGTK."
+
+#: gui/mainwindow.glade:53 gui/mainwindow.glade:54
+#, fuzzy
+msgid "About..."
+msgstr "Acerca de %1..."
+
+#: gui/mainwindow.glade:59
+msgid "Run game"
+msgstr "Ejecutar juego"
+
+#: gui/mainwindow.glade:60
+msgid "Run"
+msgstr "Ejecutar"
+
+#: gui/mainwindow.glade:61
+msgid "Run the selected game with DOSBox."
+msgstr "Ejecutar el juego seleccionado con DOSBox."
+
+#: gui/mainwindow.glade:67
+msgid "Run setup"
+msgstr "Ejecutar configuración"
+
+#: gui/mainwindow.glade:68
+msgid "Setup"
+msgstr "Configuración"
+
+#: gui/mainwindow.glade:69
+msgid "Run the selected game's setup program with DOSBox."
+msgstr ""
+"Ejecutar el programa de configuración del juego seleccionado con DOSBox."
+
+#: gui/mainwindow.glade:105
+msgid "Game"
+msgstr "Juego"
+
+#: gui/mixerdialog.glade:220 gui/mixerdialog.glade:340
+#: gui/mixerdialog.glade:460 gui/mixerdialog.glade:580
+#: gui/mixerdialog.glade:700 gui/mixerdialog.glade:820
+#: gui/mixerdialog.glade:940
+msgid "Lock balance"
+msgstr "Bloquear balance"
+
+#: gui/mixerdialog.glade:239 gui/mixerdialog.glade:359
+#: gui/mixerdialog.glade:479 gui/mixerdialog.glade:599
+#: gui/mixerdialog.glade:719 gui/mixerdialog.glade:839
+#: gui/mixerdialog.glade:959
+msgid "Left"
+msgstr "Izquierdo"
+
+#: gui/mixerdialog.glade:252 gui/mixerdialog.glade:372
+#: gui/mixerdialog.glade:492 gui/mixerdialog.glade:612
+#: gui/mixerdialog.glade:732 gui/mixerdialog.glade:852
+#: gui/mixerdialog.glade:972
+msgid "Right"
+msgstr "Derecho"
+
+#: gui/mixerdialog.glade:269
+msgid "Master volume"
+msgstr "Volumen maestro"
+
+#: gui/preferencesdialog.glade:41
+msgid "DOSBoxGTK preferences"
+msgstr "Preferencias de DOSBoxGTK"
+
+#: gui/preferencesdialog.glade:107 gui/preferencesdialog.glade:122
+#: gui/preferencesdialog.glade:246 gui/preferencesdialog.glade:261
+msgid "Select the DOSBox executable path."
+msgstr "Seleccionar la ruta al ejecutable DOSBox."
+
+#: gui/preferencesdialog.glade:109
+msgid "DOSBox path:"
+msgstr "Ruta a DOSBox:"
+
+#: gui/preferencesdialog.glade:125 gui/preferencesdialog.glade:264
+#: src/preferencesdialog.cpp:207
+msgid "DOSBox executable"
+msgstr "Ejecutable DOSBox"
+
+#: gui/preferencesdialog.glade:140 gui/preferencesdialog.glade:186
+#: gui/preferencesdialog.glade:202 gui/preferencesdialog.glade:279
+msgid "Undo changes."
+msgstr "Deshacer cambios."
+
+#: gui/preferencesdialog.glade:154 gui/preferencesdialog.glade:169
+msgid "Select the folder for storing the games captures."
+msgstr "Seleccionar lacarpeta para almacenar las capturas de los juegos."
+
+#: gui/preferencesdialog.glade:156
+msgid "Captures path:"
+msgstr "Ruta de capturas:"
+
+#: gui/preferencesdialog.glade:171
+msgid "Captures folder"
+msgstr "Carpeta de capturas"
+
+#: gui/preferencesdialog.glade:216 gui/preferencesdialog.glade:231
+msgid "Select the folder for storing the game profiles."
+msgstr "Seleccionar la carpeta par almacenar los perfiles de juego."
+
+#: gui/preferencesdialog.glade:218
+msgid "Game profiles folder"
+msgstr "Carpeta de perfiles de juego"
+
+#: gui/preferencesdialog.glade:233
+msgid "Profiles path:"
+msgstr "Ruta de perfiles:"
+
+#: gui/preferencesdialog.glade:248
+msgid "Default config file:"
+msgstr "Fichero de configuración por defecto:"
+
+#: gui/selectgameinfodialog.glade:98
+#, fuzzy
+msgid "Title"
+msgstr "Título:"
+
+#: gui/selectgameinfodialog.glade:109
+#, fuzzy
+msgid "Year"
+msgstr "Año:"
+
+#: src/editmountdialog.cpp:122
+msgid "Select image files for mounting"
+msgstr "Seleccionar ficheros de imagen para montar"
+
+#: src/editmountdialog.cpp:127 src/editprofiledialog.cpp:279
+#: src/editprofiledialog.cpp:1822 src/preferencesdialog.cpp:218
+msgid "All files"
+msgstr "Todos los ficheros"
+
+#: src/editmountdialog.cpp:130
+msgid "CUE sheets files"
+msgstr "Ficheros hojas CUE"
+
+#: src/editmountdialog.cpp:134
+msgid "Image files"
+msgstr "Ficheros de imagen"
+
+#: src/editmountdialog.cpp:144 src/editprofiledialog.cpp:95
+#: src/editprofiledialog.cpp:283
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/editmountdialog.cpp:145 src/editprofiledialog.cpp:96
+#: src/editprofiledialog.cpp:284
+msgid "Accept"
+msgstr "Aceptar"
+
+#: src/editprofiledialog.cpp:102
+msgid "DOS executables"
+msgstr "Ejecutables DOS"
+
+#: src/editprofiledialog.cpp:107
+#, fuzzy
+msgid "Select a DOSBox executable..."
+msgstr "Seleccionar la ruta al ejecutable DOSBox."
+
+#: src/editprofiledialog.cpp:145
+#, fuzzy
+msgid "DOSBox map files"
+msgstr "Ficheros de mapeado de DOSBox"
+
+#: src/editprofiledialog.cpp:148 src/editprofiledialog.cpp:1818
+msgid "Text files"
+msgstr "Ficheros de texto"
+
+#: src/editprofiledialog.cpp:156
+#, fuzzy
+msgid "Select a DOSBox mapper file for loading/saving..."
+msgstr "Seleccionar ficheros de imagen para montar"
+
+#: src/editprofiledialog.cpp:268
+#, fuzzy
+msgid "Select DOSBox boot images..."
+msgstr "Seleccionar fichero de idioma de DOSBox"
+
+#: src/editprofiledialog.cpp:272
+#, fuzzy
+msgid "DOSBox boot images"
+msgstr "Añadir imágenes de cargador"
+
+#: src/editprofiledialog.cpp:832
+msgid ""
+" DOSBox config file for '%1'\n"
+" This config file was generated by %2 version %3.%4."
+msgstr ""
+
+#: src/editprofiledialog.cpp:1815
+#, fuzzy
+msgid "DOSBox Language files."
+msgstr "Ficheros de idioma"
+
+#: src/editprofiledialog.cpp:1882
+#, fuzzy
+msgid "Invalid profile's ID: Unable to find profile with ID '%1'."
+msgstr "Incapaz de encontrar el ID de perfil dado '%1'"
+
+#: src/main.cpp:54
+msgid ""
+"%1 settings are not correctly configured.\n"
+"\n"
+"This usually happens the first time it is run.\n"
+"Now the %1 preferences dialog will open so you can configure the "
+"application.\n"
+"\n"
+"If you do not configure the application correctly it will close.\n"
+"Don't forget you need to have DOSBox installed to use %1."
+msgstr ""
+"La configuración de %1 no es correcta.\n"
+"\n"
+"Esto suele ocurrir la primera vez que se ejecuta.\n"
+"Seguidamente se mostrará el diálogo de preferencias de %1 para que pueda "
+"configurar la aplicación.\n"
+"\n"
+"Si no configura correctamente la aplicación ésta se cerrará.\n"
+"No olvide que necesita tener instalado DOSBox para poder usar %1."
+
+#: src/main.cpp:74
+msgid ""
+"%1 can not continue without correct settings.\n"
+"The application will close now.\n"
+msgstr ""
+"%1 no puede continuar sin una configuración correcta.\n"
+"La aplicación se cerrará a continuación.\n"
+
+#: src/mainwindow.cpp:307
+msgid "%1 GitHub respository"
+msgstr "Repositorio GitHub de %1"
+
+#: src/mainwindow.cpp:309
+msgid ""
+"%1 is a GUI frontend for DOSBox developed in C++\n"
+"using GTKmm, Glibmm and LibXML++ libraries.\n"
+"\n"
+"Thanks:\n"
+"\n"
+"To the people behind DOSBox\n"
+"for the countless improductive hours i spent playing oldies XD\n"
+"\n"
+"\n"
+msgstr ""
+"%1 es una interfaz gráfica para DOSBox desarrollada en C++\n"
+"usando las librerías GTKmm, Glibmm y LibXML++.\n"
+"\n"
+"Agradecimientos:\n"
+"\n"
+"A la gente detrás de DOSBox\n"
+"por las innumerables horas improductivas que he pasado jugando viejos éxitos "
+"XD\n"
+"\n"
+"\n"
+
+#: src/mainwindow.cpp:390
+msgid "About %1..."
+msgstr "Acerca de %1..."
+
+#: src/mainwindow.cpp:391
+msgid "Shows information about %1."
+msgstr "Muestra información acerca de %1."
+
+#: src/preferencesdialog.cpp:211
+msgid "Executable files"
+msgstr "Ficheros ejecutables"
+
+#: src/preferencesdialog.cpp:214
+msgid "DOSBox configuration files"
+msgstr "Ficheros de configuración de DOSBox"
