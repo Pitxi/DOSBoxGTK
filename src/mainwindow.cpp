@@ -17,6 +17,7 @@
 #include <gtkmm/toolbar.h>
 #include <gtkmm/aboutdialog.h>
 #include <gtkmm/liststore.h>
+#include <gtkmm/treemodelsort.h>
 #include <gtkmm/icontheme.h>
 
 /**
@@ -386,6 +387,9 @@ MainWindow::MainWindow(BaseObjectType *cobject, const Glib::RefPtr<Gtk::Builder>
     this->set_title(Glib::ustring::compose("%1 v%2.%3.%4.%5", PROJECT_NAME, VERSION_MAJOR, VERSION_MINOR, VERSION_PATCH, VERSION_TWEAK));
 
     this->create_profiles_file();
+
+    auto profiles_ls = Glib::RefPtr<Gtk::ListStore>::cast_static(this->m_profiles_tv->get_model());
+    profiles_ls->set_sort_column(0, Gtk::SORT_ASCENDING);
 
     about_action->set_label(Glib::ustring::compose(_("About %1..."), PROJECT_NAME));
     about_action->set_tooltip(Glib::ustring::compose(_("Shows information about %1."), PROJECT_NAME));
