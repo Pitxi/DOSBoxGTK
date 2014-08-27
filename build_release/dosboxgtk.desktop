@@ -1,8 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=DOSBoxGTK
-Exec=dosboxgtk
-Icon=dosboxgtk
-Type=Application
-Categories=Games;
-Comment=GTK based DOSBox GUI frontend.
