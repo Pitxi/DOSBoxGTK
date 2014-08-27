@@ -8,6 +8,7 @@ config.h
 resources.c
 resources.h
 build
+build_release
 *.bak
 *~
 *.pot
