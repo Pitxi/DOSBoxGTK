@@ -17,7 +17,6 @@
 #include <gtkmm/toolbar.h>
 #include <gtkmm/aboutdialog.h>
 #include <gtkmm/liststore.h>
-#include <gtkmm/treemodelsort.h>
 #include <gtkmm/icontheme.h>
 
 /**

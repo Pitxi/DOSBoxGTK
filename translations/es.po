@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DOSBoxGTK 0.0.1\n"
 "Report-Msgid-Bugs-To: javiercampon@gmail.com\n"
-"POT-Creation-Date: 2014-08-26 17:57-0400\n"
+"POT-Creation-Date: 2014-08-27 01:51-0400\n"
 "PO-Revision-Date: 2014-07-04 14:33-0400\n"
 "Last-Translator: Javier Campón <javiercamponp@gmail.com>\n"
 "Language-Team: Spanish\n"
@@ -1435,7 +1435,7 @@ msgid "Run the selected game's setup program with DOSBox."
 msgstr ""
 "Ejecutar el programa de configuración del juego seleccionado con DOSBox."
 
-#: gui/mainwindow.glade:105
+#: gui/mainwindow.glade:106
 msgid "Game"
 msgstr "Juego"
 
@@ -1629,14 +1629,14 @@ msgstr ""
 "%1 no puede continuar sin una configuración correcta.\n"
 "La aplicación se cerrará a continuación.\n"
 
-#: src/mainwindow.cpp:307
+#: src/mainwindow.cpp:308
 msgid "%1 GitHub respository"
 msgstr "Repositorio GitHub de %1"
 
-#: src/mainwindow.cpp:309
+#: src/mainwindow.cpp:310
 msgid ""
 "%1 is a GUI frontend for DOSBox developed in C++\n"
-"using GTKmm, Glibmm and LibXML++ libraries.\n"
+"using GTKmm, LibXML++ and cURLpp libraries.\n"
 "\n"
 "Thanks:\n"
 "\n"
@@ -1646,7 +1646,7 @@ msgid ""
 "\n"
 msgstr ""
 "%1 es una interfaz gráfica para DOSBox desarrollada en C++\n"
-"usando las librerías GTKmm, Glibmm y LibXML++.\n"
+"usando las librerías GTKmm, LibXML++ y cURLpp.\n"
 "\n"
 "Agradecimientos:\n"
 "\n"
@@ -1656,11 +1656,11 @@ msgstr ""
 "\n"
 "\n"
 
-#: src/mainwindow.cpp:390
+#: src/mainwindow.cpp:394
 msgid "About %1..."
 msgstr "Acerca de %1..."
 
-#: src/mainwindow.cpp:391
+#: src/mainwindow.cpp:395
 msgid "Shows information about %1."
 msgstr "Muestra información acerca de %1."
 
