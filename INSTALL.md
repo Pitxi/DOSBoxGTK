@@ -1,16 +1,8 @@
-DOSBoxGTK
-=========
+DOSBoxGTK - INSTALL
+===================
 
-DOSBoxGTK is a DOSBox frontend for Gnu/Linux systems and the Gnome desktop
-developed in C++ using the GTKmm, Glibmm and XMLpp libraries.
-
-You are free to modify, distribute, execute and compile this software and it's
-source code under the terms of the Gnu General Public License version 3, just
-don't forget to mention the source ;-)
-
-Any feedback and help will be appreciated.
-
-this project uses CMake and has some custom targets to facilitate things.
+The DOSBoxGTK project uses CMake and has some custom targets to make things
+easier.
 To create a Release version set CMAKE_BUILD_TYPE CMake variable to RELEASE.
 To create a Debug version just don't set the CMAKE_BUILD_TYPE variable or set
 it to DEBUG.

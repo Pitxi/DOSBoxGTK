@@ -209,21 +209,4 @@ if(CMAKE_BUILD_TYPE STREQUAL "RELEASE")
                       COMMENT "Deleting installed files andconfigurations...")
 
     message(STATUS "${Green}Use '${Blue}make uninstall${Green}' to uninstall the application.${ColourReset}")
-
-    # ------------
-    # CPack config
-    #-------------
-    set(CPACK_GENERATOR DEB)
-    set(CPACK_INSTALL_PREFIX /usr)
-    set(CPACK_SET_DESTDIR TRUE)
-    set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
-    set(CPACK_DEBIAN_PACKAGE_NAME           "${PACKAGE}")
-    set(CPACK_DEBIAN_PACKAGE_VERSION        "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_MICRO}")
-    set(CPACK_DEBIAN_PACKAGE_ARCHITECTURE   "amd64")
-    set(CPACK_DEBIAN_PACKAGE_MAINTAINER     "javiercamponp@gmail.com")
-    set(CPACK_DEBIAN_PACKAGE_DESCRIPTION    "${PROJECT_BRIEF}")
-    set(CPACK_DEBIAN_PACKAGE_SECTION        "Games")
-    set(CPACK_DEBIAN_PACKAGE_PRIORITY       "optional")
-    set(CPACK_DEBIAN_PACKAGE_BUILDS_DEPENDS "dosbox (>=0.74)")
-    include(CPack)
 endif()

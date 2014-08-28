@@ -25,5 +25,5 @@
 #define APP_PATH "@APP_PATH@" ///< Application path.
 #define PACKAGE "@PACKAGE@" ///< Package name.
 #define LOCALE_DIR "@LOCALE_DIR@" ///< Locales directory.
-#define @BUILD_TYPE@ ///< The build type.
+#define @CMAKE_BUILD_TYPE@ ///< The build type.
 #define PROFILES_FILENAME "profiles.xml"

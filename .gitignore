@@ -7,8 +7,7 @@ install_manifest.txt
 config.h
 resources.c
 resources.h
-build
-build_release
+build*
 *.bak
 *~
 *.pot
