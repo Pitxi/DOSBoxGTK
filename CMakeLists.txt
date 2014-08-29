@@ -51,7 +51,7 @@ find_package(PkgConfig REQUIRED)
 pkg_check_modules(GTKMM REQUIRED "gtkmm-3.0 >= 3.8.1")
 pkg_check_modules(LIBXMLPP REQUIRED "libxml++-2.6 >= 2.36.0")
 pkg_check_modules(LIBCURLPP REQUIRED "curlpp >= 0.7.3")
-pkg_check_modules(LIBCPPTOOLS REQUIRED "libcpptools >= 1.0.0.0")
+pkg_check_modules(LIBCPPTOOLS REQUIRED "cpptools >= 1.0.0.0")
 
 include_directories(${GTKMM_INCLUDE_DIRS} ${LIBXMLPP_INCLUDE_DIRS} ${LIBCURLPP_INCLUDE_DIRS} ${LIBCPPTOOLS_INCLUDE_DIRS})
 link_directories   (${GTKMM_LIBRARY_DIRS} ${LIBXMLPP_LIBRARY_DIRS} ${LIBCURLPP_LIBRARY_DIRS} ${LIBCPPTOOLS_LIBRARY_DIRS})
@@ -117,60 +117,12 @@ endif ()
 # ------------
 # Translations
 # ------------
-# - Creates a custom target named pot to create the PO Template file.
-# - Creates custom targets for every existing translation. This targets will be
-#   built within the ALL target.
-#   The PO files with the translations must be at translations directory on the
-#   project source directory.
-#   The MO files will be created at locale directory in the project binary
-#   directory.
-# -----------------------------------------------------------------------------
+# ------------
+# Translations
+# ------------
+find_package(ConfigTranslation REQUIRED)
+ConfigTranslation("Javier Campón Pichardo" "javiercamponp@gmail.com" ${HEADERS} ${SOURCES})
 
-find_package(XGettext REQUIRED)
-
-set(TRANSLATIONS_DIR "${PROJECT_SOURCE_DIR}/translations")
-
-if(MSGFMT_FOUND)
-    file(GLOB PO_FILES "${TRANSLATIONS_DIR}/*.po")
-
-    foreach(po_file IN LISTS PO_FILES)
-        get_filename_component(language "${po_file}" NAME_WE)
-
-        add_custom_target("po-${language}" ALL
-                          mkdir -p "${PROJECT_BINARY_DIR}/locale/${language}/LC_MESSAGES"
-                          COMMAND "${MSGFMT_EXECUTABLE}"
-                          "--output=${PROJECT_BINARY_DIR}/locale/${language}/LC_MESSAGES/${PACKAGE}.mo" "${po_file}"
-                          WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}"
-                          COMMENT "Processint PO file for locale '${language}'..." VERBATIM)
-    endforeach()
-endif()
-
-if(XGETTEXT_FOUND)
-    set(COPYRIGHT_HOLDER "Javier Campón Pichardo")
-    set(PACKAGE_BUG_REPORT javiercampon@gmail.com)
-
-    add_custom_target(pot
-                      mkdir -p "${TRANSLATIONS_DIR}"
-                      COMMAND "${XGETTEXT_EXECUTABLE}"
-                      "--default-domain=${PACKAGE}" "--output-dir=${TRANSLATIONS_DIR}" "--output=${PACKAGE}.pot"
-                      --from-code=UTF-8 --language=C++ --keyword=_ --indent --sort-by-file
-                      "--package-name=${PACKAGE}"
-                      "--package-version=${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_MICRO}"
-                      "--copyright-holder=${COPYRIGHT_HOLDER}" "--msgid-bugs-address=${PACKAGE_BUG_REPORT}"
-                      ${SOURCES} ${HEADERS}
-                      COMMAND "${XGETTEXT_EXECUTABLE}"
-                      "--default-domain=${PACKAGE}" "--output-dir=${TRANSLATIONS_DIR}" "--output=${PACKAGE}.pot"
-                      --from-code=UTF-8 --language=Glade --keyword=_ --indent --sort-by-file --join-existing
-                      "--package-name=${PACKAGE}"
-                      "--package-version=${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_MICRO}"
-                      "--copyright-holder=${COPYRIGHT_HOLDER}" "--msgid-bugs-address=${PACKAGE_BUG_REPORT}"
-                      ${GLADE_FILES}
-                      WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}"
-                      COMMENT "Creating POT file..." VERBATIM)
-
-    message(STATUS "${Green}Use '${Blue}make pot${Green}' to create the PO Template file.${ColourReset}")
-    message(STATUS "${Green}The absolute path of the POT file is '${Blue}${TRANSLATIONS_DIR}/${PACKAGE}.pot${Green}'.${ColourReset}")
-endif()
 
 # --------------
 # Install target
@@ -180,8 +132,6 @@ endif()
 if(CMAKE_BUILD_TYPE STREQUAL "RELEASE")
     set(CMAKE_INSTALL_PREFIX "/usr")
     set(GSCHEMA_DIR "${CMAKE_INSTALL_PREFIX}/share/glib-2.0/schemas")
-
-    configure_file("${PROJECT_TEMPLATE_DIR}/desktop.in" "${PROJECT_BINARY_DIR}/${PACKAGE}.desktop" @ONLY)
 
     install(TARGETS ${PACKAGE}
             RUNTIME DESTINATION bin
