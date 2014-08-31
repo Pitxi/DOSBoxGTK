@@ -9,6 +9,7 @@
 #include "imgmountcommand.h"
 #include <glibmm/regex.h>
 #include <glibmm/stringutils.h>
+#include <iostream>
 
 /**
  * DOSBoxGTK namespace.
@@ -105,9 +106,11 @@ Glib::ustring ImgmountCommand::get_command() const
 {
     Glib::ustring command;
 
-    if (this->m_images.size() > 0) {
-        command = "IMGMOUNT.COM";
+    if (this->m_images.size() > 0 && this->m_drive_letter != '\0') {
         auto has_spaces_regex  = Glib::Regex::create("\\s");
+
+        command = "IMGMOUNT.COM " + Glib::ustring(1, this->m_drive_letter).uppercase();
+        std::cout << command << std::endl;
 
         if (!this->m_image_type.empty()) {
             command += Glib::ustring::compose(" -t %1", this->m_image_type);

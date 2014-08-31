@@ -32,7 +32,7 @@ project("DOSBoxGTK")
 # Include custom modules path.
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake modules")
 find_package(ConfigPackage REQUIRED)
-ConfigPackage("dosboxgtk" "1.1.1.0" "org.kazires")
+ConfigPackage("dosboxgtk" "1.1.2.0" "org.kazires")
 
 find_package(Colours)
 
