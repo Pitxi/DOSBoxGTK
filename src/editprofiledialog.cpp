@@ -457,7 +457,7 @@ void EditProfileDialog::load_config_file(const Glib::ustring &filename)
 
             this->m_full_resolution_cbt->get_entry()->set_text(value);
             if (value == "original") {
-                this->m_full_resolution_cbt->set_active_id(value);
+                this->m_full_resolution_cbt->set_active_text(value);
             }
         }
 
@@ -849,13 +849,13 @@ void EditProfileDialog::save_config_file()
         config.set_boolean("sdl", "fulldouble", value_boolean);
     }
 
-    value_string = this->m_full_resolution_cbt->get_active_id();
+    value_string = this->m_full_resolution_cbt->get_active_text();
 
     if (value_string != default_config.get_value("sdl", "fullresolution")) {
         config.set_value("sdl", "fullresolution", value_string);
     }
 
-    value_string = this->m_windowed_resolution_cbt->get_active_id();
+    value_string = this->m_windowed_resolution_cbt->get_active_text();
 
     if (value_string != default_config.get_value("sdl", "windowresolution")) {
         config.set_value("sdl", "windowresolution", value_string);
