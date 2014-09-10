@@ -5,9 +5,6 @@
 # cURLpp libraries.
 #
 # Author: Javier Campón Pichardo
-# Date: 2014
-# License: Gnu Public License Version 3
-# Author: Javier Campón Pichardo
 # Date: 25/07/2014
 # Copyright 2014 Javier Campón Pichardo
 #
