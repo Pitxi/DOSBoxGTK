@@ -10,7 +10,7 @@
 #include "config.h"
 #include "preferencesdialog.h"
 #include "editprofiledialog.h"
-#include <cpptools/resourcemanager.hpp>
+#include "resourcemanager.hpp"
 #include <glibmm/i18n.h>
 #include <glibmm/miscutils.h>
 #include <glibmm/spawn.h>

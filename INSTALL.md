@@ -21,6 +21,4 @@ Any available po file in the translations dir will be automatically processed
 when building the application. The po filenames must be in the form 'es_ES.po'
 or 'es.po' (without quotes).
 
-To create a DEB package use CPack.
-
                                                           Javier Campón Pichardo

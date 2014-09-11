@@ -48,11 +48,10 @@ find_package(PkgConfig REQUIRED)
 pkg_check_modules(GTKMM REQUIRED "gtkmm-3.0 >= 3.8.1")
 pkg_check_modules(LIBXMLPP REQUIRED "libxml++-2.6 >= 2.36.0")
 pkg_check_modules(LIBCURLPP REQUIRED "curlpp >= 0.7.3")
-pkg_check_modules(LIBCPPTOOLS REQUIRED "cpptools >= 1.0.0.0")
 
-include_directories(${GTKMM_INCLUDE_DIRS} ${LIBXMLPP_INCLUDE_DIRS} ${LIBCURLPP_INCLUDE_DIRS} ${LIBCPPTOOLS_INCLUDE_DIRS})
-link_directories   (${GTKMM_LIBRARY_DIRS} ${LIBXMLPP_LIBRARY_DIRS} ${LIBCURLPP_LIBRARY_DIRS} ${LIBCPPTOOLS_LIBRARY_DIRS})
-add_definitions    (${GTKMM_CFLAGS_OTHER} ${LIBXMLPP_CFLAGS_OTHER} ${LIBCURLPP_CFLAGS_OTHER} ${LIBCPPTOOLS_CFLAGS_OTHER})
+include_directories(${GTKMM_INCLUDE_DIRS} ${LIBXMLPP_INCLUDE_DIRS} ${LIBCURLPP_INCLUDE_DIRS})
+link_directories   (${GTKMM_LIBRARY_DIRS} ${LIBXMLPP_LIBRARY_DIRS} ${LIBCURLPP_LIBRARY_DIRS})
+add_definitions    (${GTKMM_CFLAGS_OTHER} ${LIBXMLPP_CFLAGS_OTHER} ${LIBCURLPP_CFLAGS_OTHER})
 
 # -----------
 # Source code
@@ -68,7 +67,9 @@ set(SOURCES
     src/mountcommandbase.cpp
     src/mountcommand.cpp
     src/imgmountcommand.cpp
-    src/selectgameinfodialog.cpp)
+    src/selectgameinfodialog.cpp
+    src/resourcemanager.cpp
+    src/htmltools.cpp)
 
 set(HEADERS
     src/config.h
@@ -81,7 +82,9 @@ set(HEADERS
     src/mountcommandbase.h
     src/mountcommand.h
     src/imgmountcommand.h
-    src/selectgameinfodialog.h)
+    src/selectgameinfodialog.h
+    src/resourcemanager.hpp
+    src/htmltools.hpp)
 
 set(GLADE_FILES
     gui/mainwindow.glade
@@ -92,7 +95,7 @@ set(GLADE_FILES
     gui/selectgameinfodialog.glade)
 
 add_executable(${PACKAGE} ${SOURCES} ${HEADERS})
-target_link_libraries(${PACKAGE} ${GTKMM_LIBRARIES} ${LIBXMLPP_LIBRARIES} ${LIBCURLPP_LIBRARIES} ${LIBCPPTOOLS_LIBRARIES})
+target_link_libraries(${PACKAGE} ${GTKMM_LIBRARIES} ${LIBXMLPP_LIBRARIES} ${LIBCURLPP_LIBRARIES})
 
 # ---------------------
 # Doxygen documentation

@@ -18,13 +18,13 @@
 
 #include "selectgameinfodialog.h"
 #include "config.h"
+#include "htmltools.hpp"
 #include <glibmm/regex.h>
 #include <gtkmm/liststore.h>
 #include <glibmm/convert.h>
 #include <curlpp/cURLpp.hpp>
 #include <curlpp/Easy.hpp>
 #include <curlpp/Options.hpp>
-#include <cpptools/htmltools.hpp>
 
 /**
  * DOSBocGTK namespace.

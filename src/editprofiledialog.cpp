@@ -7,10 +7,11 @@
  */
 
 #include "mixerdialog.h"
+#include "config.h"
 #include "editprofiledialog.h"
 #include "editmountdialog.h"
 #include "selectgameinfodialog.h"
-#include "config.h"
+#include "htmltools.hpp"
 #include <glibmm/i18n.h>
 #include <glibmm/miscutils.h>
 #include <glibmm/stringutils.h>
@@ -20,7 +21,6 @@
 #include <curlpp/cURLpp.hpp>
 #include <curlpp/Easy.hpp>
 #include <curlpp/Options.hpp>
-#include <cpptools/htmltools.hpp>
 
 /**
  * DOSBoxGTK namespace.
