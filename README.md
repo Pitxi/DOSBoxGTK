@@ -19,4 +19,4 @@ in order to build DOSBoxGTK you will need:
 + cURLpp (>= 0.7.3)
 
 - - -
-    Javier Campón Pichardo
+Javier Campón Pichardo
