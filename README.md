@@ -12,10 +12,11 @@ Any feedback and help will be appreciated.
 
 in order to build DOSBoxGTK you will need:
 
-* GNU C++ compiler (>= 4.8)
-* CMake (>= 2.8.12)
-* gtkmm (>= 3.10.1)
-* libXML++ (>= 2.36.0)
-* cURLpp (>= 0.7.3)
++ GNU C++ compiler (>= 4.8)
++ CMake (>= 2.8.12)
++ gtkmm (>= 3.10.1)
++ libXML++ (>= 2.36.0)
++ cURLpp (>= 0.7.3)
 
-                                                          Javier Campón Pichardo
+- - -
+    Javier Campón Pichardo
