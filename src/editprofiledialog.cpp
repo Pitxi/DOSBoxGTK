@@ -355,7 +355,7 @@ void EditProfileDialog::on_consult_button_clicked()
         curlpp::initialize();
         curlpp::Easy request;
         std::stringstream os;
-        auto regex = Glib::Regex::create("niceHeaderTitle\">\\s*<a.+?>(?'title'.+?)\\s*<\\/a>|(?'key'Published by|Developed by|Released|Genre)<\\/div>.+?<a.+?>(?'value'.+?)<\\/a>|<h2>Description<\\/h2>(?'description'.+?)<div");
+        auto regex = Glib::Regex::create("niceHeaderTitle\">\\s*<a.+?>(?'title'.+?)\\s*<\\/a>|(?'key'Published by|Developed by|Released|Genre)<\\/div>.+?<a.+?>(?'value'.+?)<\\/a>|<h2>Description<\\/h2>(?'description'.+?)<div",Glib::REGEX_DOTALL);
         Glib::MatchInfo minfo;
 
         request.setOpt<curlpp::options::Url>(dialog->get_selected_href());
@@ -366,26 +366,33 @@ void EditProfileDialog::on_consult_button_clicked()
 
         if (regex->match(os.str(), 0, minfo)) {
             this->m_title_entry->set_text(Tools::html_entities_decode(minfo.fetch_named("title")));
+            this->m_publisher_entry->set_text(Glib::ustring());
+            this->m_developer_entry->set_text(Glib::ustring());
+            this->m_year_entry->set_text(Glib::ustring());
+            this->m_genre_entry->set_text(Glib::ustring());
+            this->m_notes_tv->get_buffer()->set_text(Glib::ustring());
 
             while (minfo.next()) {
-                auto br_regex = Glib::Regex::create("<br.*?>.*?(?:<.*?\\/br>)*|<br.*?\\/>", Glib::REGEX_CASELESS),
-                     tag_regex = Glib::Regex::create("<(.+?)>");
-                auto key   = minfo.fetch_named("key"),
+                auto key   = minfo.fetch_named("key").lowercase(),
                      value = Tools::html_entities_decode(minfo.fetch_named("value")),
                      description = Tools::html_entities_decode(minfo.fetch_named("description"));
 
-                description = br_regex->replace(description, 0, "\n", static_cast<Glib::RegexMatchFlags>(0)); // Replaces <br> tags with newlines.
-                description = tag_regex->replace(description, 0, Glib::ustring(), static_cast<Glib::RegexMatchFlags>(0)); // Removes every html/xml tag from the text.
-
                 if (!description.empty()) {
-                    this->m_notes_tv->get_buffer()->set_text(description);
-                } else if (key == "Published by") {
+                    auto br_regex  = Glib::Regex::create("(?:<br.*?>.*?<.*?\\/br.*>|<br.*?\\/*>)+", Glib::REGEX_CASELESS),
+                         tag_regex = Glib::Regex::create("<(.+?)>"),
+                         nl_regex  = Glib::Regex::create("\n");
+
+                    description = nl_regex->replace(description, 0, " ", static_cast<Glib::RegexMatchFlags>(0));
+                    description = br_regex->replace(description, 0, "\n", static_cast<Glib::RegexMatchFlags>(0)); // Replaces <br> tags with newlines.
+                    description = tag_regex->replace(description, 0, Glib::ustring(), static_cast<Glib::RegexMatchFlags>(0)); // Removes every html/xml tag from the text.
+                    this->m_notes_tv->get_buffer()->set_text(curlpp::unescape(description));
+                } else if (key == "published by") {
                     this->m_publisher_entry->set_text(value);
-                } else if (minfo.fetch_named("key") == "Developed by") {
+                } else if (key == "developed by") {
                     this->m_developer_entry->set_text(value);
-                } else if (minfo.fetch_named("key") == "Released") {
+                } else if (key == "released") {
                     this->m_year_entry->set_text(value.substr(value.size() - 4));
-                } else if (minfo.fetch_named("key") == "Genre") {
+                } else if (key == "genre") {
                     this->m_genre_entry->set_text(value);
                 }
             }
